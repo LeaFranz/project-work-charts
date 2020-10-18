@@ -8,7 +8,6 @@ it('renders correctly', () => {
 });
 
 it('matches snapshot', () => {
-    const tree = renderer.create().toJSON();
-    expect(tree).toMatchSnapshot();
-  })
-  
+  const tree = renderer.create().toJSON();
+  expect(tree).toMatchSnapshot();
+});
