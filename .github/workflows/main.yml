@@ -2,7 +2,7 @@ name: CI for testing
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   install-and-test:
