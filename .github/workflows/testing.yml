@@ -1,0 +1,19 @@
+
+name: CI (testing)
+
+on: push
+
+jobs:
+  install-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install npm dependencies 
+        run: |
+          npm install
+      - name: run tests
+        run: |
+          npm test
+      - name: run eslint tests
+        run: |
+          npm run lint
