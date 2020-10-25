@@ -1,10 +1,14 @@
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import WelcomeScreen from '../screens/WelcomeScreen';
+import LoginScreen from '../screens/LoginScreen';
+
+beforeEach(() => {
+  jest.useFakeTimers();
+});
 
 it('renders correctly', () => {
-  renderer.create(<WelcomeScreen />);
+  renderer.create(<LoginScreen />);
 });
 
 it('matches snapshot', () => {
