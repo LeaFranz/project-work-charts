@@ -11,7 +11,11 @@ import Logo from '../assets/images/test_logo.png';
 import CustomTextInput from '../components/CustomTextInput';
 import CustomButton from '../components/CustomButton';
 
-const LoginScreen = (props) => {
+const LoginScreen = ({navigation, props}) => {
+  const onLoginPressed = () => {
+    navigation.replace('App'); //for not going back
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <KeyboardAvoidingView>
@@ -27,7 +31,12 @@ const LoginScreen = (props) => {
           placeholderTextColor="grey"
         />
         <View style={styles.logInButton}>
-          <CustomButton title="LOG IN" disabled={false} style={styles.button} />
+          <CustomButton
+            title="LOG IN"
+            disabled={false}
+            style={styles.button}
+            onPress={onLoginPressed}
+          />
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
