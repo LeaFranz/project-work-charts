@@ -1,3 +1,166 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches snapshot 1`] = `null`;
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+  >
+    <Image
+      onError={[Function]}
+      source={
+        Object {
+          "testUri": "../../../assets/images/test_logo.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "height": 0,
+            "width": 300,
+          },
+          Object {
+            "marginBottom": 30,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "borderColor": "grey",
+            "borderRadius": 5,
+            "borderWidth": 1,
+            "height": 50,
+          },
+          Object {
+            "margin": 2,
+            "width": 300,
+          },
+        ]
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        placeholder="Email"
+        placeholderTextColor="grey"
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "flex": 1,
+            "fontSize": 16,
+            "padding": 10,
+          }
+        }
+        underlineColorAndroid="transparent"
+      />
+    </View>
+    <View>
+      <View
+        style={
+          Array [
+            Object {
+              "borderColor": "grey",
+              "borderRadius": 5,
+              "borderWidth": 1,
+              "height": 50,
+            },
+            Object {
+              "margin": 2,
+              "width": 300,
+            },
+          ]
+        }
+      >
+        <TextInput
+          allowFontScaling={true}
+          placeholder="Password"
+          placeholderTextColor="grey"
+          rejectResponderTermination={true}
+          secureTextEntry={true}
+          style={
+            Object {
+              "flex": 1,
+              "fontSize": 16,
+              "padding": 10,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+      <Text
+        allowFontScaling={false}
+        onPress={[Function]}
+        style={
+          Array [
+            Object {
+              "color": "grey",
+              "fontSize": 30,
+            },
+            Object {
+              "position": "absolute",
+              "right": 10,
+              "top": 10,
+            },
+            Object {
+              "fontFamily": "Material Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 30,
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#AFCB07",
+            "borderRadius": 5,
+            "color": "black",
+            "fontSize": 16,
+            "height": 45,
+            "justifyContent": "center",
+            "opacity": 1,
+            "padding": 10,
+            "width": 300,
+          }
+        }
+      >
+        <Text>
+          LOG IN
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;
